@@ -265,4 +265,44 @@ header::before {
     padding: 0.75rem 2rem;
     background-color: var(--text-dark);
   }
+
+  /* HEADER */
+  header {
+    margin-top: 0;
+  }
+
+  .header__container {
+    grid-template-columns: 
+    minmax(0, 1fr)
+    repeat(5, minmax(0, calc(var(--max-width) / 5)))
+    minmax(0, 1fr);
+  }
+
+  .header__content {
+    grid-column: 2/4;
+    padding-block: 8rem;
+  }
+
+  .header__content :is(p, h1) {
+    text-align: left;
+  }
+
+  .header__btns {
+    justify-content: flex-start;
+  }
+
+  .header__image {
+    grid-column: 4/8;
+    position: relative;
+    isolation: isolate;
+    height: 100%;
+  }
+
+  .header__image img {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    height: 100%;
+    width: unset;
+  }
 }
