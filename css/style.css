@@ -262,7 +262,13 @@ header::before {
 
 
 
-/* MEDIA REQUIER */
+/* MEDIA REQUIERS */
+@media (width > 540px) {
+    .destination__grid {
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+
 @media (width > 768px) {
   nav {
     position: static;
@@ -359,4 +365,8 @@ header::before {
     height: 100%;
     width: unset;
   }
+
+  .destination__grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 }
