@@ -43,6 +43,7 @@ ScrollReveal().reveal('.destination__card', {
     interval: 500,
 });
 
+/* SHOWCASE */
 ScrollReveal().reveal('.showcase__image img', {
     ...scrollRevealOption,
     origin: 'right',
@@ -58,4 +59,10 @@ ScrollReveal().reveal('.showcase__content p', {
 ScrollReveal().reveal('.showcase__btn', {
     ...scrollRevealOption,
     delay: 1500,
+});
+
+/* BANNER */
+ScrollReveal().reveal('.banner__card', {
+    ...scrollRevealOption,
+    interval: 500,
 });
